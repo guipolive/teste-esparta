@@ -10,6 +10,7 @@ function differentNumbers(array: number[]) {
 	let repeated = false;
 	let auxArray = [sentinel];
 
+	// Here we will add the different numbers to a separeted array (auxArray)
 	for(let i=0; i<array.length; i++) {
 		repeated = false;
 		for(let j=0; j<auxArray.length; j++) {
@@ -23,6 +24,7 @@ function differentNumbers(array: number[]) {
 		}
 	}
 	
+	// Returning the number of different numbers
 	return `The number of different items is ${auxArray.length}`;
 }
 

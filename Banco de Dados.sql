@@ -28,11 +28,6 @@
 	left join TURMA t on t.DISCIPLINA_id = d.id
 	where t.DISCIPLINA_id is null
 
-	-- where NOT EXISTS (
-	-- 	select * from DISCIPLINA d
-	-- 	inner join TURMA t on t.DISCIPLINA_id = d.id
-	-- )
-
 -- Buscar os alunos que frequentem aulas de 'MATEMATICA' exceto os que frequentem 'QUIMICA'.
 	select distinct Nome
 	from ALUNO a
