@@ -9,8 +9,8 @@ Repositório criado para guardar as resoluções das questões proposta pelo tim
 ### Para rodar
 - Para rodar as resoluções:
   ( * = numero_da_questao ) 
-`$ cd *`
-`$ tsc *.ts; node *.js`
+  - `$ cd *`
+  - `$ tsc *.ts; node *.js`
 
 ## Parte de banco de dados
 - A parte das respostas para as questões de banco de dados está em um arquivo separado na raiz do projeto.
