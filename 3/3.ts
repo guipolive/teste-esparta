@@ -5,8 +5,10 @@ function getEatedChocolates(chocolates: number, jumps: number) {
 	let eatedChocolates = [];
 	let eated = false;
 	
+	// Going through the 'circle of chocolates' until we find one that has already been eaten
 	for(let i=0; !eated; i = ((i+jumps) % chocolates)) {
 		for(let j=0; j<eatedChocolates.length; j++) {
+			// If the chocolate is already eated, we should not continue
 			if(eatedChocolates[j] == i) {
 				eated = true;
 				break;
